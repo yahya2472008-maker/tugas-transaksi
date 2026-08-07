@@ -1,0 +1,41 @@
+:root {
+    --bg-color: #f4f6f9;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --card-border: #4CAF50;
+    --btn-close-bg: #d9534f;
+    --btn-close-text: #ffffff;
+    --btn-mode-bg: #333333;
+    --btn-mode-text: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #f4f6f9;
+    --card-bg: #1e1e1e;
+    --card-border: #81c784;
+    --btn-close-bg: #c9302c;
+    --btn-close-text: #ffffff;
+    --btn-mode-bg: #f4f6f9;
+    --btn-mode-text: #121212;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container { max-width: 800px; margin: 0 auto; }
+h1 { font-size: 1.8rem; margin-bottom: 20px; }
+.action-buttons { display: flex; gap: 15px; margin-bottom: 30px; }
+.btn { padding: 10px 20px; border: none; border-radius: 20px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+.btn-close { background-color: var(--btn-close-bg); color: var(--btn-close-text); }
+.btn-mode { background-color: var(--btn-mode-bg); color: var(--btn-mode-text); }
+.transaction-list { display: flex; flex-direction: column; gap: 20px; }
+.card { background-color: var(--card-bg); border-left: 6px solid var(--card-border); padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); }
+.card h3 { margin: 0 0 15px 0; font-size: 1.1rem; }
+.card p { margin: 6px 0; font-size: 0.95rem; }
